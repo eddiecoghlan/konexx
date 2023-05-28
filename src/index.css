@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: "fagun", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #162022;
+  background-image: url("../src/images/konexx_website.png");
+  background-size:cover;
+  background-position:top;
+  background: cover;
+}
+
+
+code {
+  font-family: "fagun", sans-serif;
+}
+
