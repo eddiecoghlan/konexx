@@ -50,7 +50,7 @@ const Navbar = () => {
         <NavLinks to='/images' css={`
             padding-right: 20px;
           `}>(03) 9118 2708</NavLinks>
-        <Link to='/konexx.com.au/'>
+        <Link to='/'>
           <img src={Profile} alt='profile' />
         </Link>
       </RightLinks>
