@@ -12,7 +12,9 @@ const Nav = styled.nav`
   background: #5d7c80;
 `;
 
-const NavLinks = styled(Link)`
+const NavLinks = styled.nav`
+  display: flex;
+  justify-content: space-between;
   padding: 0 8px;
   text-decoration: none;
   color: #000;
@@ -24,7 +26,9 @@ const NavLinks = styled(Link)`
 
 const LeftLinks = styled.div`
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
 `;
 
 const RightLinks = styled.div`
@@ -38,15 +42,15 @@ const Navbar = () => {
   return (
     <Nav>
       <LeftLinks>
-        <NavLinks to='/about'>Konexx PTY LTD</NavLinks>
-        <NavLinks to='/store'>James McKillop</NavLinks>
+        <NavLinks>Konexx PTY LTD</NavLinks>
+        <NavLinks>James McKillop</NavLinks>
       </LeftLinks>
       <RightLinks>
-        <NavLinks to='/gmail'>james.mckillop@konexx.com.au</NavLinks>
+        <NavLinks>james.mckillop@konexx.com.au</NavLinks>
         <NavLinks to='/images' css={`
             padding-right: 20px;
           `}>(03) 9118 2708</NavLinks>
-        <Link to='/'>
+        <Link to='/konexx.com.au/'>
           <img src={Profile} alt='profile' />
         </Link>
       </RightLinks>
