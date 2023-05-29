@@ -46,10 +46,10 @@ const Navbar = () => {
         <NavLinks>James McKillop</NavLinks>
       </LeftLinks>
       <RightLinks>
-        <NavLinks>james.mckillop@konexx.com.au</NavLinks>
+        <NavLinks>admin@konexx.com.au</NavLinks>
         <NavLinks to='/images' css={`
             padding-right: 20px;
-          `}>(03) 9118 2708</NavLinks>
+          `}></NavLinks>
         <Link to='/'>
           <img src={Profile} alt='profile' />
         </Link>
