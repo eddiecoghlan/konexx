@@ -1,6 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../images/konexxlogo_highvis_272x92dp.svg';
+import BaseImage from '../images/base_image.png';
+
+const BottomImage = styled.div`
+height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  z-index: 99;
+  position: absolute;
+  max-width: 100%;
+`;
 
 
 const Container = styled.div`
@@ -128,12 +139,14 @@ const MicIcon = styled.div`
 const Home = () => {
   return (
     <Container>
+      <BottomImage>
+      <img src={BaseImage} alt="Bottom Image" />
+      </BottomImage>
       <LogoSection>
       <img src={Logo} alt='logo' />
       </LogoSection>
       <WordSection>
-        <h1>Making great
-things happen.</h1>
+        <h1>MAKING GREAT THINGS HAPPEN</h1>
       <p>With a portfolio that delves into hospitality, retail, commercial offices, base buildings and healthcare services, we pride ourselves on our attention to detail and the quality of our work. And we think our results speak for themselves.</p>
       </WordSection>
     </Container>
