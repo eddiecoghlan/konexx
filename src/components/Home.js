@@ -85,6 +85,7 @@ const LogoSection = styled.div`
 
 const WordSection = styled.div`
   padding: 20px;
+  padding-top: 0px;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -146,14 +147,14 @@ const Home = () => {
           </LogoSection>
           <WordSection>
             <h1>Making great things happen each and every day.</h1>
-          <p>Based in Melbourne, we are commercial builders licensed across Australia who take pride in working with you to create great things. With a portfolio that delves into hospitality, retail, commercial offices, base buildings and healthcare services.</p>
+            <p>Based in Melbourne, we are commercial builders licensed across Australia who take pride in working with you to create great things. With a portfolio that delves into hospitality, retail, commercial offices, base buildings and healthcare services.</p>
           <Button>
-          <a href="mailto:admin@konexx.com.au">Contact us today</a>
+            <a href="mailto:admin@konexx.com.au">Contact us today</a>
           </Button>
           </WordSection>
         </Content>
-        <BottomImage>
-      <img src={BaseImage} alt="Bottom Image" />
+      <BottomImage>
+            <img src={BaseImage} alt="Bottom Image" />
       </BottomImage>
     </Container>
   );
