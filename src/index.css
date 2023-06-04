@@ -10,6 +10,14 @@ body {
   background: cover;
 }
 
+h1 {
+  
+  color: #162022;
+  font-weight: 400;
+  font-size: clamp(25px, 3.3vw, 45px);
+  line-height: 112%;
+  font-family: "fagun", sans-serif;
+}
 
 code {
   font-family: "fagun", sans-serif;

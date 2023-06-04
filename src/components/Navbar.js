@@ -9,7 +9,7 @@ const Nav = styled.nav`
   align-items: center;
   height: 60px;
   font-size: 14px;
-  background: #5d7c80;
+  background: #162022;
 `;
 
 const NavLinks = styled.nav`
@@ -17,7 +17,7 @@ const NavLinks = styled.nav`
   justify-content: space-between;
   padding: 0 8px;
   text-decoration: none;
-  color: #000;
+  color: #5d7c80;
   svg {
     height: 24px;
     width: 24px;
@@ -29,6 +29,10 @@ const LeftLinks = styled.div`
   margin-left: 16px;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
 `;
 
 const RightLinks = styled.div`
@@ -36,6 +40,10 @@ const RightLinks = styled.div`
   margin-right: 16px;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
 `;
 
 const Navbar = () => {
