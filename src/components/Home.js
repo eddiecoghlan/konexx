@@ -47,7 +47,7 @@ const Content = styled.div`
   border: 2px solid #162022;
   width: 75%;
   height: 60%;
-  z-index: 1;
+  z-index: 96;
   margin: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -65,7 +65,7 @@ const LogoSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 3;
+  z-index: 97;
   margin-right: 5%;
   margin-left: 5%;
   img {
@@ -92,7 +92,7 @@ const WordSection = styled.div`
   color: #162022;
   text-align: left;
   max-width: 584px;
-  z-index: 4;
+  z-index: 98;
   margin-left: 40px;
 
   @media screen and (max-width: 1279px) {
@@ -110,8 +110,8 @@ const WordSection = styled.div`
 `;
 
 const Button = styled.div`
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 20px;
@@ -122,7 +122,7 @@ const Button = styled.div`
   flex-direction: column;
   color: #162022;
   text-align: center;
-  z-index: 4;
+  z-index: 99;
   background-color: #c4ff00;
   border-radius: 10px;
 
@@ -140,9 +140,6 @@ const Home = () => {
   return (
     <Container>
       <Panel></Panel>
-      <BottomImage>
-      <img src={BaseImage} alt="Bottom Image" />
-      </BottomImage>
         <Content>
           <LogoSection>
           <img src={Logo} alt='logo' />
@@ -150,11 +147,14 @@ const Home = () => {
           <WordSection>
             <h1>Making great things happen each and every day.</h1>
           <p>Based in Melbourne, we are commercial builders licensed across Australia who take pride in working with you to create great things. With a portfolio that delves into hospitality, retail, commercial offices, base buildings and healthcare services.</p>
-          <Button href="mailto:admin@konexx.com.au">
-            <p>Contact us today</p>
+          <Button>
+          <a href="mailto:admin@konexx.com.au">Contact us today</a>
           </Button>
           </WordSection>
         </Content>
+        <BottomImage>
+      <img src={BaseImage} alt="Bottom Image" />
+      </BottomImage>
     </Container>
   );
 };

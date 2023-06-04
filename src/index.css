@@ -19,6 +19,12 @@ h1 {
   font-family: "fagun", sans-serif;
 }
 
+a:link {
+  text-decoration: none;
+  color: #162022;
+}
+
+
 code {
   font-family: "fagun", sans-serif;
 }
