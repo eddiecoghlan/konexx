@@ -85,7 +85,7 @@ const LogoSection = styled.div`
   @media screen and (max-width: 768px) {
     img {
     width: 172px;
-    margin-top: auto;
+    margin-top: 20px;
     margin-right: 0%;
   }
     }
