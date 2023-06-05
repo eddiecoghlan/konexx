@@ -41,7 +41,8 @@ const Panel = styled.div`
   background: #5d7c80;
 
   @media screen and (max-width: 768px) {
-    height: 80%;
+    margin-top: 30px;
+    height: 70%;
     }
 `;
 
