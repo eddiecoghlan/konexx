@@ -11,6 +11,10 @@ const BottomImage = styled.div`
   z-index: 2;
   position: absolute;
   max-width: 100%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+    }
 `;
 
 
@@ -28,7 +32,6 @@ const Panel = styled.div`
   align-items: center;
   position: absolute;
   border-radius: 25px;
-  border: 2px solid #162022;
   width: 75%;
   height: 60%;
   z-index: 1;
@@ -36,6 +39,10 @@ const Panel = styled.div`
   top: 50%;
   transform: translateY(-50%);
   background: #5d7c80;
+
+  @media screen and (max-width: 768px) {
+    height: 80%;
+    }
 `;
 
 const Content = styled.div`
@@ -44,7 +51,7 @@ const Content = styled.div`
   align-items: center;
   position: absolute;
   border-radius: 25px;
-  border: 2px solid #162022;
+  
   width: 75%;
   height: 60%;
   z-index: 96;
